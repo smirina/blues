@@ -1,0 +1,35 @@
+{
+  "name": "blues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "vendors": "node_modules/normalize.css/normalize.css node_modules/slick-carousel/slick/slick.css"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "normalize.css": "^4.1.1",
+    "slick-carousel": "^1.5.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.1",
+    "node-sass": "^3.4.2",
+    "postcss": "^5.0.19",
+    "postcss-cli": "^2.5.2",
+    "watch": "^0.17.1"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*.css",
+    "build": "npm run clean && npm run vendors && npm run sass && npm run slick && npm run jquery",
+    "watch": "watch 'npm run sass' src/stylesheets/",
+    "server": "browser-sync start --server dist --files 'dist/*'",
+    "vendors": "touch dist/vendors.css && cat $npm_package_config_vendors > dist/vendors.css",
+    "sass": "node-sass ./src/stylesheets/index.scss ./dist/bundle.css",
+    "slick": "cp node_modules/slick-carousel/slick/slick.min.js dist/",
+    "jquery": "cp node_modules/jquery/dist/jquery.min.js dist/",
+    "postcss": "postcss -c postcss.json"
+  },
+  "author": "Irina Smyshlyaeva <nitchenkoiv@gmail.com>",
+  "license": "ISC"
+}
