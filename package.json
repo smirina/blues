@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "config": {
-    "vendors": "node_modules/normalize.css/normalize.css node_modules/slick-carousel/slick/slick.css"
+    "vendors": "node_modules/slick-carousel/slick/slick.css node_modules/bootstrap/dist/css/bootstrap.min.css"
   },
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "jquery": "^2.2.3",
-    "normalize.css": "^4.1.1",
     "slick-carousel": "^1.5.9"
   },
   "devDependencies": {
