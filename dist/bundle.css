@@ -185,3 +185,20 @@
 
 .general-font {
   font-family: 'PT Sans', sans-serif; }
+
+.main-container {
+  margin-top: 50px; }
+
+.promo-block {
+  font-family: Lora, Arial, sans;
+  font-size: 50px;
+  font-style: bold;
+  color: white;
+  background-image: url(images/bg/bg_main.jpg);
+  background-size: cover; }
+  .promo-block img {
+    display: block;
+    height: 150px;
+    margin: 100px auto; }
+  .promo-block .promo-text {
+    margin-bottom: 80px; }

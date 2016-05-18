@@ -1,0 +1,20 @@
+.promo-block {
+  font-family: Lora, Arial, sans;
+  font-size: 50px;
+  font-style: bold;
+  color: white;
+
+
+  background-image: url(images/bg/bg_main.jpg);
+  background-size: cover;
+
+  img {
+    display: block;
+    height: 150px;
+    margin: 100px auto;
+  }
+
+  .promo-text {
+    margin-bottom: 80px;
+  }
+}
