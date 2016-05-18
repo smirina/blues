@@ -17,7 +17,7 @@
     "node-sass": "^3.4.2",
     "postcss": "^5.0.19",
     "postcss-cli": "^2.5.2",
-    "watch": "^0.17.1"
+    "watch": "^0.18.0"
   },
   "scripts": {
     "clean": "rm -rf dist/*.css",
