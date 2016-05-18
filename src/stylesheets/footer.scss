@@ -1,0 +1,24 @@
+.basic-footer {
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+
+  .footer-link {
+    text-decoration: underline;
+    font-size: 15px;
+    color: $brand-gray;
+  }
+
+  .footer-icon {
+    height: 40px;
+  }
+
+  .footer-link+.footer-link {
+    margin: 20px;
+  }
+
+  .made-by {
+    padding: 20px 0;
+  }
+
+}

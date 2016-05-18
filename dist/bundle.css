@@ -223,3 +223,16 @@
     color: grey; }
   .news .news-title {
     color: #7d1c20; }
+
+.basic-footer {
+  background-color: rgba(0, 0, 0, 0.8); }
+  .basic-footer .footer-link {
+    text-decoration: underline;
+    font-size: 15px;
+    color: #818181; }
+  .basic-footer .footer-icon {
+    height: 40px; }
+  .basic-footer .footer-link + .footer-link {
+    margin: 20px; }
+  .basic-footer .made-by {
+    padding: 20px 0; }
