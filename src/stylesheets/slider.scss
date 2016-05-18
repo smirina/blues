@@ -1,0 +1,15 @@
+.slider {
+
+  min-height: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+
+  img {
+    display: inline-block;
+    max-height: 50px;
+  }
+  img+img {
+    margin: 30px;
+  }
+
+}
