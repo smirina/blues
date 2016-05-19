@@ -272,3 +272,7 @@
   height: 170px;
   background-color: white;
   margin-bottom: 30px; }
+
+.article-block {
+  border: 2px solid red;
+  padding: 100px; }
