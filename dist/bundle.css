@@ -263,3 +263,8 @@
     margin: 20px; }
   .basic-footer .made-by {
     padding: 20px 0; }
+
+.brand-item {
+  height: 170px;
+  background-color: white;
+  margin-bottom: 30px; }
