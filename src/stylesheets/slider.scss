@@ -1,15 +1,56 @@
 .slider {
 
-  min-height: 150px;
   background-color: rgba(0, 0, 0, 0.8);
   margin: 0 auto;
 
-  img {
-    display: inline-block;
-    max-height: 50px;
-  }
-  img+img {
-    margin: 30px;
+  .brand-images img {
+    max-height: 68px;
+    outline: none;
   }
 
+  .brand {
+    outline: none;
+    margin: 30px;
+    cursor: pointer;
+    opacity: .4;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .9;
+      transition: opacity .3s;
+    }
+  }
+
+  .carousel {
+    position: relative;
+    padding: 25px;
+  }
+
+  .brand-images {
+    margin: 0 80px;
+    width: calc(100% - 160px);
+  }
+
+  .left, .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    opacity: .4;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .9;
+      transition: opacity .3s;
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
 }

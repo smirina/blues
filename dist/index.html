@@ -39,15 +39,29 @@
       </div>
     </div>
     <div class="slider">
-      <div class="container">
-        <img src="images/main_arrow_left.png">
-        <img src="images/main_brend_levis.png" alt="levis">
-        <img src="images/main_brend_alpha.png" alt="alpha">
-        <img src="images/main_brend_schott.png" alt="schott">
-        <img src="images/main_brend_sancho.png" alt="sancho">
-        <img src="images/main_brend_gap.png" alt="gap">
-        <img src="images/main_brend_timberland.png" alt="timberland">
-        <img src="images/main_arrow_right.png">
+      <div class="container carousel">
+        <img class="left" src="images/main_arrow_left.png" alt="" />
+        <div class="brand-images">
+          <a class="brand" href="#">
+            <img src="images/main_brend_levis.png" alt="levis">
+          </a>
+          <a class="brand" href="#">
+            <img src="images/main_brend_alpha.png" alt="alpha">
+          </a>
+          <a class="brand" href="#">
+            <img src="images/main_brend_schott.png" alt="schott">
+          </a>
+          <a class="brand" href="#">
+            <img src="images/main_brend_sancho.png" alt="sancho">
+          </a>
+          <a class="brand" href="#">
+            <img src="images/main_brend_gap.png" alt="gap">
+          </a>
+          <a class="brand" href="#">
+            <img src="images/main_brend_timberland.png" alt="timberland">
+          </a>
+        </div>
+        <img class="right" src="images/main_arrow_right.png" alt="" />
       </div>
     </div>
     <div class="news general-font">
@@ -87,5 +101,22 @@
       </div>
     </footer>
   </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="slick.min.js"></script>
+  <script>
+    $('.slider .brand-images').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 3,
+      swipeToSlide: true,
+      variableWidth: true,
+      centerMode: true,
+      autoplay: true,
+      prevArrow: $('.slider .left'),
+      nextArrow: $('.slider .right')
+    });
+  </script>
 </body>
 </html>
