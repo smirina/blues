@@ -269,13 +269,38 @@
   .news .news-date {
     color: grey; }
   .news .news-title {
-    color: #7d1c20; }
+    color: #7d1c20;
+    text-transform: uppercase; }
+
+.news-list {
+  margin-bottom: 55px; }
+  .news-list .news-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px; }
+  .news-list .news-item-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px; }
+  .news-list .news-item-title {
+    display: block;
+    color: #7d1c20;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer; }
+  .news-list .news-item-lead {
+    height: 80px;
+    overflow: hidden; }
+    .news-list .news-item-lead p {
+      margin: 0; }
 
 .basic-footer {
   background-color: rgba(0, 0, 0, 0.8); }
   .basic-footer .footer-link {
     text-decoration: underline;
-    font-size: 15px;
     color: #818181; }
   .basic-footer .footer-icon {
     height: 40px; }
