@@ -12,6 +12,13 @@
   background-size: cover;
 }
 
-.bottom {
-  margin-top: -428px;
+.page-title {
+  text-align: center;
+  color: white;
+  margin: 55px 0;
+  letter-spacing: 0.08em;
+
+  .vingette {
+    opacity: .4;
+  }
 }
