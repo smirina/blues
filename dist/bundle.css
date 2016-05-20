@@ -348,11 +348,21 @@
 
 .article-block {
   background-color: white;
-  padding: 40px 100px 80px;
+  padding: 55px 80px;
   display: inline-block;
   margin-bottom: 150px; }
-  .article-block .article-brand-logo {
-    float: right; }
+  .article-block .article-title {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .article-block .article-title h2 {
+      margin: 0; }
+    .article-block .article-title .article-brand-logo {
+      display: inline;
+      height: 54px; }
+  .article-block .article-text {
+    line-height: 1.8em; }
 
 .article-page {
   background-image: url(images/bg/bg_brend_alpha.jpg);
