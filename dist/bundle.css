@@ -205,6 +205,14 @@
   .page-title .vingette {
     opacity: .4; }
 
+.basic-title {
+  font-size: 30px;
+  color: #7d1c20; }
+
+.basic-title-min {
+  font-size: 30px;
+  color: #7d1c20; }
+
 .promo-block {
   font-family: Lora, Arial, sans;
   font-size: 40px;
@@ -315,8 +323,12 @@
 
 .article-block {
   background-color: white;
-  padding: 100px; }
+  padding: 40px 100px 80px;
+  display: inline-block;
+  margin-bottom: 150px; }
+  .article-block .article-brand-logo {
+    float: right; }
 
 .article-page {
-  background-image: url(images/bg/bg_main.jpg);
+  background-image: url(images/bg/bg_brend_alpha.jpg);
   background-size: cover; }

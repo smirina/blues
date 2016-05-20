@@ -1,10 +1,16 @@
 .article-block {
   background-color: white;
-  padding: 100px;
+  padding: 40px 100px 80px;
+  display: inline-block;
+  margin-bottom: 150px;
+
+    .article-brand-logo {
+      float: right;
+    }
 }
 
 
 .article-page {
-  background-image: url(images/bg/bg_main.jpg);
+  background-image: url(images/bg/bg_brend_alpha.jpg);
   background-size: cover;
 }
