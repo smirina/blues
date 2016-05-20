@@ -12,7 +12,13 @@
   background-size: cover;
 }
 
-.bottom {
-  margin-top: -428px;
-  // transform: translateY(-100%);
+.page-title {
+  text-align: center;
+  color: white;
+  margin: 55px 0;
+  letter-spacing: 0.08em;
+
+  .vingette {
+    opacity: .4;
+  }
 }

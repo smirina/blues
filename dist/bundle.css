@@ -32,7 +32,7 @@
   height: 50px; }
 
 .navbar-inverse .navbar-nav > .active > a {
-  background-color: inherit; }
+  background-color: inherit !important; }
 
 .main-logo-big, .brends-alpha, .brends-levis, .brends-schott, .main-arrow-news,
 .main-arrow-news-hover, .brends-sancho, .main-brend-alpha, .main-logo-menu, .back-arrow-hover,
@@ -197,8 +197,13 @@
   background-image: url(images/bg/bg_main.jpg);
   background-size: cover; }
 
-.bottom {
-  margin-top: -428px; }
+.page-title {
+  text-align: center;
+  color: white;
+  margin: 55px 0;
+  letter-spacing: 0.08em; }
+  .page-title .vingette {
+    opacity: .4; }
 
 .promo-block {
   font-family: Lora, Arial, sans;
@@ -301,7 +306,7 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 28px;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.2em;
     margin-bottom: 16px; }
   .brand-item .brand-overview-text {
     height: 40px;
