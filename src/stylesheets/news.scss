@@ -9,5 +9,40 @@
 
   .news-title {
     color: $brand-red;
+    text-transform: uppercase;
+  }
+}
+
+.news-list {
+  margin-bottom: 55px;
+
+  .news-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .news-item-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .news-item-title {
+    display: block;
+    color: $brand-red;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .news-item-lead {
+    height: 80px;
+    overflow: hidden;
+
+    p { margin: 0 }
   }
 }
