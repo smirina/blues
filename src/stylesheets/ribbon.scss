@@ -1,0 +1,59 @@
+.ribbon {
+  background-color: $ribbon-color;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: $ribbon-line-height;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    transition: all .3s;
+    background-color: $ribbon-color-lighten;
+
+    &:after {
+      transition: all .3s;
+      border-left-color: $ribbon-color-lighten;
+    }
+
+    &:before {
+      transition: all .3s;
+      border-top-color: $ribbon-back-color-lighten;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    right: -$ribbon-arrow-width;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0px solid transparent;
+    border-left-width: $ribbon-arrow-width;
+    border-right-width: 0px;
+    border-top-width: $ribbon-height / 2;
+    border-bottom-width: $ribbon-height / 2;
+    border-left-color: $ribbon-color;
+    transition: all .3s;
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: -$ribbon-back-height;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0px solid transparent;
+    border-left-width: $ribbon-back-width;
+    border-right-width: 0px;
+    border-top-width: $ribbon-back-height;
+    border-top-color: $ribbon-back-color;
+    transition: all .3s;
+  }
+}

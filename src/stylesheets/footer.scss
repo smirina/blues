@@ -1,6 +1,9 @@
 .basic-footer {
-  background-color: $black-background;
   color: $gray;
+
+  .navbar {
+    margin-bottom: 0;
+  }
 
   .footer-link {
     text-decoration: underline;

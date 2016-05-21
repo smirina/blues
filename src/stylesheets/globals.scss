@@ -1,16 +1,18 @@
 body {
   background-color: $black-background;
-  
 }
 
 .main-container {
-  padding-top: 50px;
   min-height: 100vh;
-}
-
-.first-page {
+  padding-top: 50px;
   background-image: url(images/bg/bg_main.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container-full-height-item {
+  flex: 1;
 }
 
 .page-title {

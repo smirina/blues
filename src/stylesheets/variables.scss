@@ -1,3 +1,25 @@
 $red: #7d1c20;
+$red-lighten: lighten($red, 10%);
 $gray: rgba(255, 255, 255, .4);
 $black-background: rgba(0, 0, 0, .8);
+
+$font-size-base: 14px;
+$font-size-card-title: 20px;
+
+$ribbon-color: $red;
+$ribbon-color-lighten: $red-lighten;
+
+$ribbon-line-height: 20px;
+$ribbon-vertical-padding: 8px;
+$ribbon-height: $ribbon-line-height + 2 * $ribbon-vertical-padding;
+
+$ribbon-arrow-width: 10px;
+
+$ribbon-back-color: #666;
+$ribbon-back-color-lighten: lighten(#666, 10%);
+
+$ribbon-back-height: 13px;
+$ribbon-back-width: 16px;
+
+$news-padding: 40px;
+$news-ribbon-top: -($news-padding + $ribbon-height / 2);
