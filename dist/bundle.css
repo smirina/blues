@@ -61,6 +61,13 @@
   .navbar-inverse .navbar-nav > li > a:hover {
     transition: all .3s; }
 
+.navbar-inverse .navbar-nav > li.active > a {
+  background-color: inherit;
+  letter-spacing: 0.1em;
+  transition: all .3s; }
+  .navbar-inverse .navbar-nav > li.active > a:hover {
+    transition: all .3s; }
+
 .main-logo-big, .brends-alpha, .brends-levis, .brends-schott, .main-arrow-news,
 .main-arrow-news-hover, .brends-sancho, .main-brend-alpha, .main-logo-menu, .back-arrow-hover,
 .back-arrow, .title-left, .title-right, .gallery-arrow-left, .gallery-arrow-left-hover,
