@@ -1,0 +1,29 @@
+.gallery {
+  .gallery-items {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .gallery-item {
+    position: absolute;
+    top: 0;
+    width: 1024px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 20px 80px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 2px invert($gray);
+    border: 1px solid invert($gray);
+    border-radius: 2px;
+    transition: all .3s;
+
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
