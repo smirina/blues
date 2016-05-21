@@ -1,3 +1,18 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  font-size: 30px; }
+
+.icon-instagram {
+  width: 0.857421875em;
+  color: white; }
+
+.icon-vk {
+  width: 1.08203125em;
+  color: white; }
+
 @font-face {
   font-family: Lora;
   src: local("Lora"), url(../fonts/Lora/LoraBold/LoraBold.woff);
@@ -12,6 +27,10 @@
   font-family: Lora;
   src: local("Lora"), url(../fonts/Lora/LoraItalic/LoraItalic.woff);
   font-style: italic; }
+
+.general-font .nav,
+.general-font .news-title {
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .lora-normal {
   font-family: Lora;
@@ -31,8 +50,16 @@
 .logo img {
   height: 50px; }
 
-.navbar-inverse .navbar-nav > .active > a {
-  background-color: inherit !important; }
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none; }
+
+.navbar-inverse .navbar-nav > li > a {
+  background-color: inherit;
+  letter-spacing: 0.1em;
+  transition: all .3s; }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    transition: all .3s; }
 
 .main-logo-big, .brends-alpha, .brends-levis, .brends-schott, .main-arrow-news,
 .main-arrow-news-hover, .brends-sancho, .main-brend-alpha, .main-logo-menu, .back-arrow-hover,
@@ -186,12 +213,12 @@
   width: 34px;
   height: 60px; }
 
-.general-font {
-  font-family: 'PT Sans', sans-serif; }
+body {
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .main-container {
-  margin-top: 50px;
-  min-height: calc(100vh - 50px); }
+  padding-top: 50px;
+  min-height: 100vh; }
 
 .first-page {
   background-image: url(images/bg/bg_main.jpg);
@@ -298,16 +325,22 @@
       margin: 0; }
 
 .basic-footer {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.4); }
   .basic-footer .footer-link {
-    text-decoration: underline;
-    color: #818181; }
+    text-decoration: underline; }
+    .basic-footer .footer-link:hover {
+      text-decoration: underline; }
   .basic-footer .footer-icon {
-    height: 40px; }
-  .basic-footer .footer-link + .footer-link {
-    margin: 20px; }
+    padding-top: 8px;
+    padding-bottom: 7px;
+    opacity: 0.4;
+    transition: opacity .3s; }
+    .basic-footer .footer-icon:hover {
+      opacity: 1;
+      transition: opacity .3s; }
   .basic-footer .made-by {
-    padding: 20px 0; }
+    padding: 15px 0; }
 
 .brand-item {
   height: 170px;
@@ -329,7 +362,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     transition: opacity .3s;
     cursor: pointer;

@@ -1,23 +1,28 @@
 .basic-footer {
-
-  background-color: rgba(0, 0, 0, 0.8);
-
+  background-color: $black-background;
+  color: $gray;
 
   .footer-link {
     text-decoration: underline;
-    color: $brand-gray;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .footer-icon {
-    height: 40px;
-  }
+    padding-top: 8px;
+    padding-bottom: 7px;
+    opacity: 0.4;
+    transition: opacity .3s;
 
-  .footer-link+.footer-link {
-    margin: 20px;
+    &:hover {
+      opacity: 1;
+      transition: opacity .3s;
+    }
   }
 
   .made-by {
-    padding: 20px 0;
+    padding: 15px 0;
   }
-
 }

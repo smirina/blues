@@ -18,3 +18,10 @@
   url(../fonts/Lora/LoraItalic/LoraItalic.woff);
   font-style: italic;
 }
+
+.general-font {
+  .nav,
+  .news-title {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+}

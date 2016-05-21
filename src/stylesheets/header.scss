@@ -2,6 +2,17 @@
   height: 50px;
 }
 
-.navbar-inverse .navbar-nav > .active > a {
-  background-color: inherit !important;
+.navbar-inverse {
+  background-color: $black-background;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  background-color: inherit;
+  letter-spacing: 0.1em;
+  transition: all .3s;
+
+  &:hover {
+    transition: all .3s;
+  }
 }
