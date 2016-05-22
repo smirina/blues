@@ -50,8 +50,8 @@
         </h1>
 
         <div class="gallery">
-          <div></div>
-          <div></div>
+          <div class="ribbon ribbon-right next">Next</div>
+          <div class="ribbon ribbon-left prev">Prev</div>
           <ul class="gallery-items">
             <li class="gallery-item">
               <img src="/images/bg/bg_brend_alpha.jpg" alt="" />
@@ -109,29 +109,93 @@
   <script src="jquery.min.js"></script>
   <script src="slick.min.js"></script>
   <script>
-    const items = document.querySelectorAll('.gallery-item');
-    for (let i = 0, len = items.length; i < len; i++) {
-      items[i].style.zIndex = 1000 - i;
-      if (i !== 0) {
-        items[i].style.transform = 'rotate(' + grad() + 'grad)';
-      }
-    }
-    recalcZIndex();
+    const container = document.querySelector('.gallery-items');
 
-    function recalcZIndex() {
-      for (let i = 0, len = items.length; i < len; i++) {
-        items[i].style.zIndex = 1000 - i;
+    const animations = {
+      next: function(node, duration, start, timestamp) {
+        if (!start) start = timestamp;
+        const msFromStart = timestamp - start;
+        node.style.opacity = easeOutQuart(msFromStart, 1, -1, duration);
+        addTransform(
+          node, "scale(" + easeOutQuart(msFromStart, 1, 0.1, duration) + ')'
+        );
+        if (msFromStart < duration) {
+          requestAnimationFrame(
+            animations.next.bind(null, node, duration, start)
+          );
+        };
+      },
+      prev: function(node, duration, start, timestamp) {
+        if (!start) start = timestamp;
+        const msFromStart = timestamp - start;
+        node.style.opacity = easeOutQuart(msFromStart, 0, 1, duration);
+        addTransform(
+          node, "scale(" + easeOutQuart(msFromStart, 1.1, -0.1, duration) + ")"
+        );
+        if (msFromStart < duration) {
+          requestAnimationFrame(
+            animations.prev.bind(null, node, duration, start)
+          );
+        };
       }
+    };
+
+    Array.from(container.children).forEach((elem, i, array) => {
+      if (i === array.length - 1) return;
+      rotate(elem);
+    });
+    document.querySelector('.next').addEventListener('click', next);
+    document.querySelector('.prev').addEventListener('click', prev);
+
+    function rotate(node) {
+      addTransform(node, 'rotate(' + (Math.random() * 6 - 3) + 'deg)');
     }
 
-    function grad() {
-      return Math.random() * 10 - 5;
+    function prev() {
+      const current = container.children[0];
+      current.style.opacity = 0;
+      addTransform(current, 'scale(1.1)');
+      container.removeChild(current);
+      container.appendChild(current);
+      animate(current, 'prev', 300);
+    }
+
+    function animate(node, animation, duration) {
+      requestAnimationFrame(
+        animations[animation].bind(null, node, duration, null)
+      );
+    }
+
+    function easeOutQuart(t, b, c, d) {
+      return -c * ((t=t/d-1)*t*t*t - 1) + b;
+    }
+
+    function addTransform(node, transform) {
+      const rawTransforms = node.style.transform.split(' ');
+      rawTransforms.push(transform);
+      const transforms = {};
+      rawTransforms.filter(i => i !== "").map((i) => {
+        const match = i.match(/^(.+)(\(.+\))$/);
+        return [match[1], match[2]]
+      }).forEach(elem => {
+        transforms[elem[0]] = elem[1];
+      });
+      const newTransforms = Object.keys(transforms).map(key => {
+        return key + transforms[key];
+      }).join(' ');
+      node.style.transform = newTransforms;
     }
 
     function next() {
-      const current = items[0];
-      current.style.opacity = 0;
-      recalcZIndex();
+      let children = container.children;
+      let current = children[children.length - 1];
+      animate(current, 'next', 300);
+      setTimeout(() => {
+        container.removeChild(current);
+        container.insertBefore(current, container.children[0]);
+        current.style.opacity = 1;
+        current.style.transform = addTransform(current, 'scale(1)');
+      }, 500);
     }
   </script>
 </body>

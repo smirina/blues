@@ -11,49 +11,83 @@
   cursor: pointer;
   transition: all .3s;
 
+  &:before, &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0px solid transparent;
+    position: absolute;
+    transition: all .3s;
+  }
+
   &:hover {
     transition: all .3s;
     background-color: $ribbon-color-lighten;
 
-    &:after {
+    &:before, &:after {
       transition: all .3s;
-      border-left-color: $ribbon-color-lighten;
+    }
+  }
+
+  &.ribbon-right {
+    &:hover {
+      &:after {
+        border-left-color: $ribbon-color-lighten;
+      }
+
+      &:before {
+        border-top-color: $ribbon-back-color-lighten;
+      }
+    }
+
+    &:after {
+      right: -$ribbon-arrow-width;
+      top: 0;
+      border-left-width: $ribbon-arrow-width;
+      border-right-width: 0px;
+      border-top-width: $ribbon-height / 2;
+      border-bottom-width: $ribbon-height / 2;
+      border-left-color: $ribbon-color;
     }
 
     &:before {
-      transition: all .3s;
-      border-top-color: $ribbon-back-color-lighten;
+      left: 0;
+      bottom: -$ribbon-back-height;
+      border-left-width: $ribbon-back-width;
+      border-right-width: 0px;
+      border-top-width: $ribbon-back-height;
+      border-top-color: $ribbon-back-color;
     }
   }
 
-  &:after {
-    position: absolute;
-    right: -$ribbon-arrow-width;
-    top: 0;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 0px solid transparent;
-    border-left-width: $ribbon-arrow-width;
-    border-right-width: 0px;
-    border-top-width: $ribbon-height / 2;
-    border-bottom-width: $ribbon-height / 2;
-    border-left-color: $ribbon-color;
-    transition: all .3s;
-  }
+  &.ribbon-left {
+    &:hover {
+      &:before {
+        border-right-color: $ribbon-color-lighten;
+      }
 
-  &:before {
-    position: absolute;
-    left: 0;
-    bottom: -$ribbon-back-height;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 0px solid transparent;
-    border-left-width: $ribbon-back-width;
-    border-right-width: 0px;
-    border-top-width: $ribbon-back-height;
-    border-top-color: $ribbon-back-color;
-    transition: all .3s;
+      &:after {
+        border-top-color: $ribbon-back-color-lighten;
+      }
+    }
+
+    &:before {
+      left: -$ribbon-arrow-width;
+      top: 0;
+      border-right-width: $ribbon-arrow-width;
+      border-left-width: 0px;
+      border-top-width: $ribbon-height / 2;
+      border-bottom-width: $ribbon-height / 2;
+      border-right-color: $ribbon-color;
+    }
+
+    &:after {
+      right: 0;
+      bottom: -$ribbon-back-height;
+      border-right-width: $ribbon-back-width;
+      border-left-width: 0px;
+      border-top-width: $ribbon-back-height;
+      border-top-color: $ribbon-back-color;
+    }
   }
 }
