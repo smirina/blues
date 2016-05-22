@@ -317,6 +317,7 @@ body {
   padding-top: 50px;
   background-image: url(images/bg/bg_main.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   transition: transform .3s; }
@@ -449,6 +450,13 @@ body {
     .news-list .news-item-lead p {
       margin: 0; }
 
+.news-article {
+  background-color: white;
+  padding: 30px 20px 50px;
+  margin-top: 25px; }
+  .news-article .news-title {
+    margin-bottom: 10px; }
+
 .basic-footer {
   color: rgba(255, 255, 255, 0.4); }
   .basic-footer .navbar {
@@ -530,27 +538,33 @@ body {
 
 .article-alpha {
   background-image: url(images/bg/bg_brend_alpha.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .article-gap {
   background-image: url(images/bg/bg_brend_gap.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .article-sancho {
   background-image: url(images/bg/bg_brend_sancho.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .article-timberland {
   background-image: url(images/bg/bg_brend_timberland.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .article-schott {
   background-image: url(images/bg/bg_brend_schott.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .article-levis {
   background-image: url(images/bg/bg_brend_levis.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .article-page .ribbon-positioner {
   height: 0;

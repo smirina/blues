@@ -72,3 +72,13 @@
     p { margin: 0 }
   }
 }
+
+.news-article {
+  background-color: white;
+  padding: 30px 20px 50px;
+  margin-top: 25px;
+
+  .news-title{
+    margin-bottom: 10px
+  }
+}
