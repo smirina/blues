@@ -18,17 +18,17 @@
 
 @font-face {
   font-family: Lora;
-  src: local("Lora"), url(../fonts/Lora/LoraBold/LoraBold.woff);
+  src: local("Lora"), url(/fonts/Lora/LoraBold/LoraBold.woff);
   font-style: bold; }
 
 @font-face {
   font-family: Lora;
-  src: local("Lora"), url(../fonts/Lora/LoraRegular/LoraRegular.woff);
+  src: local("Lora"), url(/fonts/Lora/LoraRegular/LoraRegular.woff);
   font-style: normal; }
 
 @font-face {
   font-family: Lora;
-  src: local("Lora"), url(../fonts/Lora/LoraItalic/LoraItalic.woff);
+  src: local("Lora"), url(/fonts/Lora/LoraItalic/LoraItalic.woff);
   font-style: italic; }
 
 .general-font .nav,
