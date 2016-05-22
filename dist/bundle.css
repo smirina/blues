@@ -140,22 +140,31 @@
     transition: all .3s; }
 
 @media screen and (max-width: 767px) {
-  .nav-on {
+  .menu {
     display: block;
     height: 100%;
     width: 240px;
     min-height: 100vh;
     transform: translateX(-100%);
     transition: all .3s; }
-    .nav-on a {
+    .menu a {
       font-size: 18px;
       padding: 20px 15px !important; }
-    .nav-on.push {
+    .menu.push {
       transform: translateX(0); } }
 
 .main-container.push {
   transform: translateX(240px);
   transition: all .3s; }
+
+.navigation-toggler {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .main-logo-big, .brends-alpha, .brends-levis, .brends-schott, .main-arrow-news,
 .main-arrow-news-hover, .brends-sancho, .main-brend-alpha, .main-logo-menu, .back-arrow-hover,
