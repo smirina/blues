@@ -21,12 +21,16 @@
         <title>vk</title>
         <path class="path1" d="M34.232 9.286q0.411 1.143-2.679 5.25-0.429 0.571-1.161 1.518-1.393 1.786-1.607 2.339-0.304 0.732 0.25 1.446 0.304 0.375 1.446 1.464h0.018l0.071 0.071q2.518 2.339 3.411 3.946 0.054 0.089 0.116 0.223t0.125 0.473-0.009 0.607-0.446 0.491-1.054 0.223l-4.571 0.071q-0.429 0.089-1-0.089t-0.929-0.393l-0.357-0.214q-0.536-0.375-1.25-1.143t-1.223-1.384-1.089-1.036-1.009-0.277q-0.054 0.018-0.143 0.063t-0.304 0.259-0.384 0.527-0.304 0.929-0.116 1.384q0 0.268-0.063 0.491t-0.134 0.33l-0.071 0.089q-0.321 0.339-0.946 0.393h-2.054q-1.268 0.071-2.607-0.295t-2.348-0.946-1.839-1.179-1.259-1.027l-0.446-0.429q-0.179-0.179-0.491-0.536t-1.277-1.625-1.893-2.696-2.188-3.768-2.33-4.857q-0.107-0.286-0.107-0.482t0.054-0.286l0.071-0.107q0.268-0.339 1.018-0.339l4.893-0.036q0.214 0.036 0.411 0.116t0.286 0.152l0.089 0.054q0.286 0.196 0.429 0.571 0.357 0.893 0.821 1.848t0.732 1.455l0.286 0.518q0.518 1.071 1 1.857t0.866 1.223 0.741 0.688 0.607 0.25 0.482-0.089q0.036-0.018 0.089-0.089t0.214-0.393 0.241-0.839 0.17-1.446 0-2.232q-0.036-0.714-0.161-1.304t-0.25-0.821l-0.107-0.214q-0.446-0.607-1.518-0.768-0.232-0.036 0.089-0.429 0.304-0.339 0.679-0.536 0.946-0.464 4.268-0.429 1.464 0.018 2.411 0.232 0.357 0.089 0.598 0.241t0.366 0.429 0.188 0.571 0.063 0.813-0.018 0.982-0.045 1.259-0.027 1.473q0 0.196-0.018 0.75t-0.009 0.857 0.063 0.723 0.205 0.696 0.402 0.438q0.143 0.036 0.304 0.071t0.464-0.196 0.679-0.616 0.929-1.196 1.214-1.92q1.071-1.857 1.911-4.018 0.071-0.179 0.179-0.313t0.196-0.188l0.071-0.054 0.089-0.045t0.232-0.054 0.357-0.009l5.143-0.036q0.696-0.089 1.143 0.045t0.554 0.295z"></path>
       </symbol>
+      <symbol id="icon-bars" viewBox="0 0 27 32">
+        <title>bars</title>
+        <path class="path1" d="M27.429 24v2.286q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804v-2.286q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804zM27.429 14.857v2.286q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804v-2.286q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804zM27.429 5.714v2.286q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804v-2.286q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804z"></path>
+      </symbol>
     </defs>
   </svg>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top menu">
     <div class="container">
-      <div class="navbar-header">
+      <div class="navbar-header hidden-xs">
         <div class="logo">
           <a href="/index.html">
             <img src="images/main_logo_menu.png" alt="blues" />
@@ -34,16 +38,24 @@
         </div>
       </div>
       <ul class="nav navbar-nav navbar-right text-uppercase">
-        <li class="active"><a>Легендарные марки</a></li>
+        <li class="active visible-xs"><a>Главная</a></li>
+        <li><a href="/brands.html">Легендарные марки</a></li>
         <li><a href="/gallery.html">Галерея</a></li>
         <li><a href="/articles.html">Статьи</a></li>
         <li><a href="/contacts.html">Адрес и телефон</a></li>
+        <li class="visible-xs"><a href="/">Партнеры</a></li>
       </ul>
     </div>
   </nav>
 
   <div class="main-container">
     <div class="main-container-full-height-item">
+      <button class="navigation-toggler">
+        <svg  class="icon icon-bars visible-xs">
+          <use xlink:href="#icon-bars"></use>
+        </svg>
+      </button>
+
       <div class="container">
         <h1 class="page-title text-uppercase">
           <img src="images/title_left.png" class="vingette" alt="" />
@@ -53,7 +65,7 @@
 
         <div class="brand-list">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <a href="/article-gap.html">
                 <div class="brand-item">
                   <img src="images/brends_gap.png" alt="gap" class="brand-logo"/>
@@ -66,7 +78,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <a href="/article-levis.html">
                 <div class="brand-item">
                   <img src="images/brends_levis.png" alt="levis" class="brand-logo"/>
@@ -79,7 +91,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <a href="/article-schott.html">
                 <div class="brand-item">
                   <img src="images/brends_schott.png" alt="schott" class="brand-logo"/>
@@ -92,7 +104,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <a href="/article-alpha.html">
                 <div class="brand-item">
                   <img src="images/brends_alpha.png" alt="alpha" class="brand-logo"/>
@@ -105,7 +117,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <a href="/article-sancho.html">
                 <div class="brand-item">
                   <img src="images/brends_sancho.png" alt="sancho" class="brand-logo"/>
@@ -118,7 +130,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-6">
               <a href="/article-timberland.html">
                 <div class="brand-item">
                   <img src="images/brends_timberland.png" alt="timberland" class="brand-logo"/>
@@ -155,10 +167,10 @@
               </a>
             </li>
             <li>
-              <a href="/partners.html" class="footer-link text-uppercase" target="_blank">Партнеры</a>
+              <a href="/partners.html" class="hidden-xs footer-link text-uppercase" target="_blank">Партнеры</a>
             </li>
             <li>
-              <a href="/contacts.html" class="footer-link text-uppercase" target="_blank">Схема проезда</a>
+              <a href="/contacts.html" class="hidden-xs footer-link text-uppercase" target="_blank">Схема проезда</a>
             </li>
           </ul>
           <div class="made-by pull-right">
@@ -167,7 +179,19 @@
         </div>
       </nav>
     </footer>
-
   </div>
+  <script>
+    const toggler = document.querySelector('.navigation-toggler');
+    toggler.addEventListener('click', (e) => {
+      const menu = document.querySelector('.menu')
+      if (menu.classList.contains('push')) {
+        menu.classList.remove('push');
+        document.querySelector('.main-container').classList.remove('push');
+      } else {
+        menu.classList.add('push');
+        document.querySelector('.main-container').classList.add('push');
+      }
+    });
+  </script>
 </body>
 </html>
