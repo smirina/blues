@@ -489,16 +489,37 @@ body {
   .article-block .article-text {
     line-height: 1.8em; }
 
-.article-page {
+.article-alpha {
   background-image: url(images/bg/bg_brend_alpha.jpg);
   background-size: cover; }
-  .article-page .ribbon-positioner {
-    height: 0;
-    position: relative; }
-    .article-page .ribbon-positioner .ribbon {
-      position: absolute;
-      left: -62px;
-      top: 10px; }
+
+.article-gap {
+  background-image: url(images/bg/bg_brend_gap.jpg);
+  background-size: cover; }
+
+.article-sancho {
+  background-image: url(images/bg/bg_brend_sancho.jpg);
+  background-size: cover; }
+
+.article-timberland {
+  background-image: url(images/bg/bg_brend_stimberland.jpg);
+  background-size: cover; }
+
+.article-schott {
+  background-image: url(images/bg/bg_brend_schott.jpg);
+  background-size: cover; }
+
+.article-levis {
+  background-image: url(images/bg/bg_brend_levis.jpg);
+  background-size: cover; }
+
+.article-page .ribbon-positioner {
+  height: 0;
+  position: relative; }
+  .article-page .ribbon-positioner .ribbon {
+    position: absolute;
+    left: -62px;
+    top: 10px; }
 
 .contacts-page {
   padding: 80px 0; }
