@@ -146,12 +146,15 @@
     width: 240px;
     min-height: 100vh;
     transform: translateX(-100%);
-    transition: all .3s; }
+    transition: all .3s;
+    border-right: 1px solid rgba(255, 255, 255, 0.4); }
     .menu a {
       font-size: 18px;
       padding: 20px 15px !important; }
     .menu.push {
-      transform: translateX(0); } }
+      transform: translateX(0); }
+    .menu li + li {
+      border-top: 1px solid rgba(255, 255, 255, 0.4); } }
 
 .main-container.push {
   transform: translateX(240px);
@@ -500,6 +503,7 @@ body {
     opacity: 1;
     transition: opacity .3s; }
   .brand-item .brand-logo {
+    max-width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;

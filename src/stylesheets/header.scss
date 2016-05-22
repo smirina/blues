@@ -37,6 +37,7 @@
     min-height: 100vh;
     transform: translateX(-100%);
     transition: all .3s;
+    border-right: 1px solid $gray;
 
     & a {
       font-size: 18px;
@@ -45,6 +46,10 @@
 
     &.push {
       transform: translateX(0);
+    }
+
+    li + li {
+      border-top: 1px solid $gray;
     }
   }
 }
