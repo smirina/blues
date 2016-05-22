@@ -28,9 +28,9 @@
     </defs>
   </svg>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top menu">
     <div class="container">
-      <div class="navbar-header">
+      <div class="navbar-header hidden-xs">
         <div class="logo">
           <a href="/index.html">
             <img src="images/main_logo_menu.png" alt="blues" />
@@ -38,18 +38,25 @@
         </div>
       </div>
       <ul class="nav navbar-nav navbar-right text-uppercase">
+        <li class="visible-xs"><a href="/">Главная</a></li>
         <li><a href="/brands.html">Легендарные марки</a></li>
         <li><a href="/gallery.html">Галерея</a></li>
-        <li><a href="/articles.html">Статьи</a></li>
+        <li class="active"><a>Статьи</a></li>
         <li><a href="/contacts.html">Адрес и телефон</a></li>
+        <li class="visible-xs"><a href="/">Партнеры</a></li>
       </ul>
     </div>
   </nav>
 
   <div class="main-container">
     <div class="main-container-full-height-item">
-      <div class="container">
+      <button class="navigation-toggler">
+        <svg  class="icon icon-bars visible-xs">
+          <use xlink:href="#icon-bars"></use>
+        </svg>
+      </button>
 
+      <div class="container">
         <h1 class="page-title text-uppercase">
           <img src="images/title_left.png" class="vingette hidden-xs" alt="" />
           Статьи
@@ -190,7 +197,19 @@
         </div>
       </nav>
     </footer>
-
   </div>
+  <script>
+    const toggler = document.querySelector('.navigation-toggler');
+    toggler.addEventListener('click', (e) => {
+      const menu = document.querySelector('.menu')
+      if (menu.classList.contains('push')) {
+        menu.classList.remove('push');
+        document.querySelector('.main-container').classList.remove('push');
+      } else {
+        menu.classList.add('push');
+        document.querySelector('.main-container').classList.add('push');
+      }
+    });
+  </script>
 </body>
 </html>

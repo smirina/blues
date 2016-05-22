@@ -617,6 +617,19 @@ body {
     color: #7d1c20; }
   .contacts-page td + td {
     padding-left: 20px; }
+  @media screen and (max-width: 767px) {
+    .contacts-page .contacts-block {
+      flex-direction: column; }
+    .contacts-page .contacts-map {
+      height: 400px;
+      flex-grow: 1; }
+      .contacts-page .contacts-map iframe {
+        height: 400px; }
+    .contacts-page .contacts-info {
+      flex-grow: 1;
+      padding: 40px 20px; }
+    .contacts-page .contacts-info > div + div {
+      margin-top: 20px; } }
 
 .gallery {
   margin-bottom: 40px;

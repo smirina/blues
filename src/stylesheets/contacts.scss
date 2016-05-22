@@ -43,4 +43,28 @@
   td + td {
     padding-left: 20px;
   }
+
+  @media screen and (max-width: 767px) {
+    & .contacts-block {
+      flex-direction: column;
+    }
+
+    & .contacts-map {
+      height: 400px;
+      flex-grow: 1;
+
+      iframe {
+        height: 400px;
+      }
+    }
+
+    & .contacts-info {
+      flex-grow: 1;
+      padding: 40px 20px;
+    }
+
+    & .contacts-info > div + div {
+      margin-top: 20px;
+    }
+  }
 }
