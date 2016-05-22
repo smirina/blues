@@ -200,7 +200,7 @@
   </div>
   <script>
     const toggler = document.querySelector('.navigation-toggler');
-    toggler.addEventListener('click', (e) => {
+    toggler.addEventListener('click', function(e) {
       const menu = document.querySelector('.menu')
       if (menu.classList.contains('push')) {
         menu.classList.remove('push');
