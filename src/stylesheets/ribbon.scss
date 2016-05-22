@@ -72,7 +72,7 @@
     }
 
     &:before {
-      left: -$ribbon-arrow-width;
+      left: -$ribbon-arrow-width + 1px;
       top: 0;
       border-right-width: $ribbon-arrow-width;
       border-left-width: 0px;

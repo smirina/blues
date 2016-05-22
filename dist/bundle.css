@@ -32,7 +32,9 @@
 .general-font .news-title,
 .general-font .ribbon,
 .general-font .page-title,
-.general-font .brand-overview-title {
+.general-font .brand-overview-title,
+.general-font .article-title,
+.general-font .contacts-info {
   font-family: 'Roboto Condensed', sans-serif; }
 
 .ribbon {
@@ -83,7 +85,7 @@
   .ribbon.ribbon-left:hover:after {
     border-top-color: gray; }
   .ribbon.ribbon-left:before {
-    left: -10px;
+    left: -9px;
     top: 0;
     border-right-width: 10px;
     border-left-width: 0px;
@@ -121,16 +123,16 @@
   border: none; }
 
 .navbar-inverse .navbar-nav > li > a {
-  background-color: inherit;
+  background-color: inherit !important;
   letter-spacing: 0.1em;
-  transition: all .3s; }
+  transition: all .3s !important; }
   .navbar-inverse .navbar-nav > li > a:hover {
     transition: all .3s; }
 
 .navbar-inverse .navbar-nav > li.active > a {
-  background-color: inherit;
+  background-color: inherit !important;
   letter-spacing: 0.1em;
-  transition: all .3s; }
+  transition: all .3s !important; }
   .navbar-inverse .navbar-nav > li.active > a:hover {
     transition: all .3s; }
 
@@ -381,18 +383,20 @@ body {
   .news .news-date {
     color: rgba(0, 0, 0, 0.4);
     margin: 0; }
-  .news .news-title {
-    color: #7d1c20;
-    font-size: 20px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 20px;
+
+.news-title {
+  color: #7d1c20;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s; }
+  .news-title:hover {
     text-decoration: none;
-    cursor: pointer;
+    color: #a7252b;
     transition: color .3s; }
-    .news .news-title:hover {
-      color: #a7252b;
-      transition: color .3s; }
 
 .news-list {
   margin-bottom: 55px; }
@@ -488,6 +492,41 @@ body {
 .article-page {
   background-image: url(images/bg/bg_brend_alpha.jpg);
   background-size: cover; }
+  .article-page .ribbon-positioner {
+    height: 0;
+    position: relative; }
+    .article-page .ribbon-positioner .ribbon {
+      position: absolute;
+      left: -62px;
+      top: 10px; }
+
+.contacts-page {
+  padding: 80px 0; }
+  .contacts-page .contacts-block {
+    background-color: white;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between; }
+  .contacts-page .contacts-info {
+    flex-grow: 1;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 30px; }
+  .contacts-page .contacts-map {
+    flex-grow: 2;
+    height: 700px; }
+  .contacts-page .contacts-title {
+    font-size: 44px;
+    color: #7d1c20; }
+  .contacts-page .contacts-schedule, .contacts-page .contacts-title {
+    text-transform: uppercase; }
+  .contacts-page .contacts-schedule-days {
+    color: #7d1c20; }
+  .contacts-page td + td {
+    padding-left: 20px; }
 
 .gallery {
   margin-bottom: 40px;

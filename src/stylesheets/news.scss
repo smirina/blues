@@ -18,20 +18,22 @@
     margin: 0;
   }
 
-  .news-title {
-    color: $red;
-    font-size: $font-size-card-title;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color .3s;
+}
 
-    &:hover {
-      color: $red-lighten;
-      transition: color .3s;
-    }
+.news-title {
+  color: $red;
+  font-size: $font-size-card-title;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s;
+
+  &:hover {
+    text-decoration: none;
+    color: $red-lighten;
+    transition: color .3s;
   }
 }
 

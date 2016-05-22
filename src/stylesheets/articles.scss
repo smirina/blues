@@ -28,4 +28,15 @@
 .article-page {
   background-image: url(images/bg/bg_brend_alpha.jpg);
   background-size: cover;
+
+  .ribbon-positioner {
+    height: 0;
+    position: relative;
+
+    .ribbon {
+      position: absolute;
+      left: -62px;
+      top: 10px;
+    }
+  }
 }
