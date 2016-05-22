@@ -6,9 +6,11 @@
   <title>Blues&amp;Jeans</title>
   <link href="vendors.css" rel="stylesheet">
   <link href="bundle.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body class="general-font">
+
   <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <symbol id="icon-instagram" viewBox="0 0 27 32">
@@ -32,7 +34,7 @@
         </div>
       </div>
       <ul class="nav navbar-nav navbar-right text-uppercase">
-        <li><a href="/brands.html">Легендарные марки</a></li>
+        <li><a href="/gallery.html">Легендарные марки</a></li>
         <li><a href="/gallery.html">Галерея</a></li>
         <li><a href="/articles.html">Статьи</a></li>
         <li><a href="/contacts.html">Адрес и телефон</a></li>
@@ -41,66 +43,47 @@
   </nav>
 
   <div class="main-container">
-    <div class="promo-block main-container-full-height-item">
-      <img src="images/main_logo_big.png" alt="blues" />
-      <div class="promo-text text-center">
-        Лучшие американские и английские<br>
-        бренды одежды и обуви, настоящий блюз<br> 
-        и неформальная обстановка.
-      </div>
-    </div>
+    <div class="main-container-full-height-item">
+      <div class="container">
+        <h1 class="page-title text-uppercase">
+          <img src="images/title_left.png" class="vingette" alt="" />
+          Партнеры
+          <img src="images/title_right.png" class="vingette" alt="" />
+        </h1>
 
-    <div class="slider">
-      <div class="container carousel">
-        <img class="left" src="images/main_arrow_left.png" alt="" />
-        <div class="brand-images">
-          <a class="brand" href="#">
-            <img src="images/main_brend_levis.png" alt="levis">
-          </a>
-          <a class="brand" href="#">
-            <img src="images/main_brend_alpha.png" alt="alpha">
-          </a>
-          <a class="brand" href="#">
-            <img src="images/main_brend_schott.png" alt="schott">
-          </a>
-          <a class="brand" href="#">
-            <img src="images/main_brend_sancho.png" alt="sancho">
-          </a>
-          <a class="brand" href="#">
-            <img src="images/main_brend_gap.png" alt="gap">
-          </a>
-          <a class="brand" href="#">
-            <img src="images/main_brend_timberland.png" alt="timberland">
-          </a>
-        </div>
-        <img class="right" src="images/main_arrow_right.png" alt="" />
-      </div>
-    </div>
-
-    <div class="news">
-      <div class="container ribbon-positioner">
-        <a class="ribbon-link" href="#">
-          <div class="ribbon ribbon-right">Все новости</div>
-        </a>
-        <div class="row">
-          <article class="col-md-4">
-            <p class="news-date">26.04.2016</p>
-            <p class="news-title text-uppercase">Мы на радио</p>
-            <p class="news-overview">Слушайте нас на РОКСе каждую субботу в 
-              передаче «Русский рок» с Женей Глюк.</p>
-          </article>
-          <article class="col-md-4">
-            <p class="news-date">26.04.2016</p>
-            <p class="news-title text-uppercase">Мы на радио</p>
-            <p class="news-overview">Слушайте нас на РОКСе каждую субботу в 
-              передаче «Русский рок» с Женей Глюк.</p>
-          </article>
-          <article class="col-md-4">
-            <p class="news-date">26.04.2016</p>
-            <p class="news-title text-uppercase">Мы на радио</p>
-            <p class="news-overview">Слушайте нас на РОКСе каждую субботу в 
-              передаче «Русский рок» с Женей Глюк.</p>
-          </article>
+        <div class="brand-list">
+          <div class="row">
+            <div class="col-md-4">
+                <div class="brand-item">
+                  <img src="images/brends_schott.png" alt="schott" class="brand-logo"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="brand-item">
+                <img src="images/brends_alpha.png" alt="alpha" class="brand-logo"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="brand-item">
+                <img src="images/brends_gap.png" alt="gap" class="brand-logo"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="brand-item">
+                <img src="images/brends_sancho.png" alt="sancho" class="brand-logo"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="brand-item">
+                <img src="images/brends_levis.png" alt="levis" class="brand-logo"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="brand-item">
+                <img src="images/brends_levis.png" alt="levis" class="brand-logo"/>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -124,7 +107,7 @@
               </a>
             </li>
             <li>
-              <a href="/partners.html" class="footer-link text-uppercase" target="_blank">Партнеры</a>
+              <a href="/partners.html" class="footer-link text-uppercase active" target="_blank">Партнеры</a>
             </li>
             <li>
               <a href="/contacts.html" class="footer-link text-uppercase" target="_blank">Схема проезда</a>
@@ -136,23 +119,7 @@
         </div>
       </nav>
     </footer>
-  </div>
 
-  <script src="jquery.min.js"></script>
-  <script src="slick.min.js"></script>
-  <script>
-    $('.slider .brand-images').slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 3,
-      swipeToSlide: true,
-      variableWidth: true,
-      centerMode: true,
-      autoplay: true,
-      prevArrow: $('.slider .left'),
-      nextArrow: $('.slider .right')
-    });
-  </script>
+  </div>
 </body>
 </html>
