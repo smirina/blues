@@ -76,9 +76,16 @@
 .news-article {
   background-color: white;
   padding: 30px 20px 50px;
-  margin-top: 25px;
+  margin-bottom: 25px;
 
-  .news-title{
+  .news-title {
     margin-bottom: 10px
+  }
+
+  .news-overview {
+    height: 40px;
+    overflow: hidden;
+
+    p { margin: 0 }
   }
 }

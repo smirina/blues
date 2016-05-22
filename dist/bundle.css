@@ -465,9 +465,14 @@ body {
 .news-article {
   background-color: white;
   padding: 30px 20px 50px;
-  margin-top: 25px; }
+  margin-bottom: 25px; }
   .news-article .news-title {
     margin-bottom: 10px; }
+  .news-article .news-overview {
+    height: 40px;
+    overflow: hidden; }
+    .news-article .news-overview p {
+      margin: 0; }
 
 .basic-footer {
   color: rgba(255, 255, 255, 0.4); }

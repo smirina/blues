@@ -153,10 +153,9 @@
       }
     };
 
-    Array.from(container.children).forEach((elem, i, array) => {
-      if (i === array.length - 1) return;
-      rotate(elem);
-    });
+    for (var i = 0, len = container.children.length; i < len; i++) {
+      if (i !== len - 1) rotate(container.children[i]);
+    }
     document.querySelector('.next').addEventListener('click', next);
     document.querySelector('.prev').addEventListener('click', prev);
 
@@ -187,23 +186,23 @@
       const rawTransforms = node.style.transform.split(' ');
       rawTransforms.push(transform);
       const transforms = {};
-      rawTransforms.filter(i => i !== "").map((i) => {
+      rawTransforms.filter(function(i) { return i !== "" }).map(function(i) {
         const match = i.match(/^(.+)(\(.+\))$/);
         return [match[1], match[2]]
-      }).forEach(elem => {
-        transforms[elem[0]] = elem[1];
+      }).forEach(function(elem) {
+        return transforms[elem[0]] = elem[1];
       });
-      const newTransforms = Object.keys(transforms).map(key => {
+      const newTransforms = Object.keys(transforms).map(function(key) {
         return key + transforms[key];
       }).join(' ');
       node.style.transform = newTransforms;
     }
 
     function next() {
-      let children = container.children;
-      let current = children[children.length - 1];
+      var children = container.children;
+      var current = children[children.length - 1];
       animate(current, 'next', 300);
-      setTimeout(() => {
+      setTimeout(function() {
         container.removeChild(current);
         container.insertBefore(current, container.children[0]);
         current.style.opacity = 1;
@@ -213,7 +212,7 @@
   </script>
   <script>
     const toggler = document.querySelector('.navigation-toggler');
-    toggler.addEventListener('click', (e) => {
+    toggler.addEventListener('click', function(e) {
       const menu = document.querySelector('.menu')
       if (menu.classList.contains('push')) {
         menu.classList.remove('push');
