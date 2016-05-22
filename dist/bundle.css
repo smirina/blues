@@ -545,7 +545,8 @@ body {
       margin: 0; }
     .article-block .article-title .article-brand-logo {
       display: inline;
-      height: 54px; }
+      height: 64px;
+      opacity: 0.5; }
   .article-block .article-text {
     line-height: 1.8em; }
 
