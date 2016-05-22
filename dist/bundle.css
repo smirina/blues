@@ -655,4 +655,10 @@ body {
     transform: translate(-50%, -50%); }
   @media screen and (max-width: 767px) {
     .gallery {
-      min-height: 350px; } }
+      min-height: 350px; }
+      .gallery .next, .gallery .prev {
+        top: 80%; }
+      .gallery .next {
+        right: 50px; }
+      .gallery .prev {
+        left: 50px; } }

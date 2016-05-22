@@ -48,6 +48,17 @@
 
   @media screen and (max-width: 767px) {
     min-height: 350px;
-    
+
+    & .next, & .prev {
+      top: 80%;
+    }
+
+    & .next {
+      right: 50px;
+    }
+
+    & .prev {
+      left: 50px;
+    }
   }
 }
