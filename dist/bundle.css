@@ -554,6 +554,13 @@ body {
       opacity: 0.5; }
   .article-block .article-text {
     line-height: 1.8em; }
+  @media screen and (max-width: 767px) {
+    .article-block {
+      padding: 20px 40px; }
+      .article-block .article-title {
+        flex-direction: column; }
+        .article-block .article-title h2 {
+          margin-bottom: 20px; } }
 
 .article-alpha {
   background-image: url(images/bg/bg_brend_alpha.jpg);
@@ -592,6 +599,10 @@ body {
     position: absolute;
     left: -62px;
     top: 10px; }
+  @media screen and (max-width: 767px) {
+    .article-page .ribbon-positioner .ribbon {
+      top: -18px;
+      left: 10px; } }
 
 .contacts-page {
   padding: 80px 0; }

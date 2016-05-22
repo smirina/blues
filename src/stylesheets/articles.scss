@@ -24,6 +24,16 @@
   .article-text {
     line-height: 1.8em;
   }
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 40px;
+
+    & .article-title {
+      flex-direction: column;
+
+      h2 { margin-bottom: 20px; }
+    }
+  }
 }
 
 .article-alpha {
@@ -63,7 +73,6 @@
 }
 
 .article-page {
-
   .ribbon-positioner {
     height: 0;
     position: relative;
@@ -72,6 +81,13 @@
       position: absolute;
       left: -62px;
       top: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      & .ribbon {
+        top: -($ribbon-height / 2);
+        left: $ribbon-arrow-width;
+      }
     }
   }
 }
