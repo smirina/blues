@@ -55,7 +55,7 @@
           <use xlink:href="#icon-bars"></use>
         </svg>
       </button>
-      
+
       <div class="container">
         <h1 class="page-title text-uppercase">
           <img src="../images/title_left.png" class="vingette hidden-xs" alt="" />
@@ -144,5 +144,18 @@
       </nav>
     </footer>
   </div>
+  <script>
+    const toggler = document.querySelector('.navigation-toggler');
+    toggler.addEventListener('click', function(e) {
+      const menu = document.querySelector('.menu')
+      if (menu.classList.contains('push')) {
+        menu.classList.remove('push');
+        document.querySelector('.main-container').classList.remove('push');
+      } else {
+        menu.classList.add('push');
+        document.querySelector('.main-container').classList.add('push');
+      }
+    });
+  </script>
 </body>
 </html>
