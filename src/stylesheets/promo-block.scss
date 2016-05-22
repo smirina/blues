@@ -16,4 +16,13 @@
   .promo-text {
     margin-bottom: 50px;
   }
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
 }

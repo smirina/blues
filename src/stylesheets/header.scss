@@ -28,3 +28,28 @@
     }
   }
 }
+
+.nav-on {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 100%;
+    width: $navigation-push-width;
+    min-height: 100vh;
+    transform: translateX(-100%);
+    transition: all .3s;
+
+    & a {
+      font-size: 18px;
+      padding: 20px 15px !important;
+    }
+
+    &.push {
+      transform: translateX(0);
+    }
+  }
+}
+
+.main-container.push {
+  transform: translateX($navigation-push-width);
+  transition: all .3s;
+}

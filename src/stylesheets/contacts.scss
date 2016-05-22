@@ -20,7 +20,11 @@
 
   .contacts-map {
     flex-grow: 2;
-    height: 700px;
+    height: 660px;
+
+    iframe {
+      width: 100%;
+    }
   }
 
   .contacts-title {

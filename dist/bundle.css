@@ -13,6 +13,9 @@
   width: 1.08203125em;
   color: white; }
 
+.icon-bars {
+  color: white; }
+
 @font-face {
   font-family: Lora;
   src: local("Lora"), url(../fonts/Lora/LoraBold/LoraBold.woff);
@@ -135,6 +138,24 @@
   transition: all .3s !important; }
   .navbar-inverse .navbar-nav > li.active > a:hover {
     transition: all .3s; }
+
+@media screen and (max-width: 767px) {
+  .nav-on {
+    display: block;
+    height: 100%;
+    width: 240px;
+    min-height: 100vh;
+    transform: translateX(-100%);
+    transition: all .3s; }
+    .nav-on a {
+      font-size: 18px;
+      padding: 20px 15px !important; }
+    .nav-on.push {
+      transform: translateX(0); } }
+
+.main-container.push {
+  transform: translateX(240px);
+  transition: all .3s; }
 
 .main-logo-big, .brends-alpha, .brends-levis, .brends-schott, .main-arrow-news,
 .main-arrow-news-hover, .brends-sancho, .main-brend-alpha, .main-logo-menu, .back-arrow-hover,
@@ -297,7 +318,8 @@ body {
   background-image: url(images/bg/bg_main.jpg);
   background-size: cover;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: transform .3s; }
 
 .main-container-full-height-item {
   flex: 1; }
@@ -333,6 +355,12 @@ body {
     margin: 50px auto; }
   .promo-block .promo-text {
     margin-bottom: 50px; }
+  @media screen and (max-width: 767px) {
+    .promo-block {
+      font-size: 30px; }
+      .promo-block img {
+        height: auto;
+        width: 100%; } }
 
 .slider {
   background-color: rgba(0, 0, 0, 0.8); }
@@ -380,6 +408,12 @@ body {
     position: absolute;
     top: -58px;
     right: 0; }
+    @media screen and (max-width: 767px) {
+      .news .ribbon-link {
+        top: auto;
+        bottom: -58px;
+        z-index: 1000;
+        right: 10px; } }
   .news .news-date {
     color: rgba(0, 0, 0, 0.4);
     margin: 0; }
@@ -433,6 +467,11 @@ body {
       transition: opacity .3s; }
   .basic-footer .made-by {
     padding: 15px 0; }
+  @media screen and (max-width: 767px) {
+    .basic-footer .nav > li {
+      display: inline-block; }
+    .basic-footer .made-by {
+      width: 100%; } }
 
 .brand-item {
   height: 170px;
@@ -538,7 +577,9 @@ body {
     line-height: 30px; }
   .contacts-page .contacts-map {
     flex-grow: 2;
-    height: 700px; }
+    height: 660px; }
+    .contacts-page .contacts-map iframe {
+      width: 100%; }
   .contacts-page .contacts-title {
     font-size: 44px;
     color: #7d1c20; }
