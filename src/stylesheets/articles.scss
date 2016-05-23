@@ -79,14 +79,14 @@
 
     .ribbon {
       position: absolute;
-      left: -62px;
-      top: 10px;
+      left: -75px;
+      top: 15px;
     }
 
     @media screen and (max-width: 767px) {
-      & .ribbon {
-        top: -($ribbon-height / 2);
-        left: $ribbon-arrow-width;
+      & .ribbon.large {
+        top: -21px;
+        left: 12px;
       }
     }
   }

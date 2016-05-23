@@ -37,12 +37,10 @@
   margin-bottom: 20px;
   text-decoration: none;
   cursor: pointer;
-  transition: color .3s;
 
   &:hover {
     text-decoration: none;
-    color: $red-lighten;
-    transition: color .3s;
+    color: $red;
   }
 }
 

@@ -29,6 +29,24 @@
     }
   }
 
+  &.large {
+    padding: 12px 16px;
+    font-size: 18px;
+
+    &.ribbon-left:before {
+      left: -12px;
+      border-right-width: 13px;
+      border-top-width: 22px;
+      border-bottom-width: 21px;
+    }
+
+    &.ribbon-left:after {
+      bottom: -15px;
+      border-right-width: 18px;
+      border-top-width: 15px;
+    }
+  }
+
   &.ribbon-right {
     &:hover {
       &:after {
