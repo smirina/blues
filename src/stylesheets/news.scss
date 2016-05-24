@@ -17,7 +17,7 @@
         top: auto;
         bottom: $news-ribbon-top;
         z-index: 1000;
-        right: $ribbon-arrow-width;
+        right: $ribbon-arrow-width * 3;
       }
     }
   }
