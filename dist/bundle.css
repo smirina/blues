@@ -491,6 +491,8 @@ body {
   color: rgba(255, 255, 255, 0.4); }
   .basic-footer .navbar {
     margin-bottom: 0; }
+  .basic-footer .navbar-nav {
+    font-size: 12px; }
   .basic-footer .footer-link {
     text-decoration: underline; }
     .basic-footer .footer-link:hover {
