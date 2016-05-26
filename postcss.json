@@ -1,8 +1,11 @@
 {
-  "use": ["autoprefixer"],
+  "use": ["autoprefixer", "postcss-flexibility", "postcss-csso"],
   "replace": true,
   "input": "dist/bundle.css",
   "autoprefixer": {
-    "browsers": "> 5%"
+    "browsers": ["> 5%", "IE 8"]
+  },
+  "csso": {
+    "restructure": false
   }
 }
