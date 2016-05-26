@@ -1,18 +1,18 @@
 .icon {
   display: inline-block;
   width: 1em;
-  height: 1em;
+  height: 36px;
   fill: currentColor;
   font-size: 30px; }
 
 .icon-instagram {
-  padding-top: 4px;
   width: 0.857421875em;
   color: white; }
 
 .icon-vk {
   width: 1.08203125em;
-  color: white; }
+  color: white;
+  height: 34px; }
 
 .icon-bars {
   color: white; }
