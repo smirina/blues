@@ -1,0 +1,12 @@
+.col-md-4 {
+  display: inline-block;
+  width: 33%;
+}
+
+.container > .navbar-header {
+  float: left;
+}
+
+.nav > li {
+  float: right;
+}
