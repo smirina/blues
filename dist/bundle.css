@@ -348,7 +348,8 @@ body {
   transition: transform .3s; }
 
 .main-container-full-height-item {
-  flex: 1; }
+  flex: 1;
+  min-height: 300px; }
 
 .page-title {
   text-align: center;
