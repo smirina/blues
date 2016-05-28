@@ -10,16 +10,20 @@
   <script src="https://cdn.rawgit.com/es-shims/es5-shim/master/es5-shim.min.js"></script>
   <script src="flexibility.js"></script>
   <!--[if lt IE 9]>
-   <link href="ie8.css" rel="stylesheet">
-   <script>
+    <link href="ie8.css" rel="stylesheet">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script>
       document.createElement('header');
       document.createElement('nav');
       document.createElement('section');
       document.createElement('article');
       document.createElement('aside');
       document.createElement('footer');
-   </script>
-<![endif]-->
+    </script>
+  <![endif]-->
+  <!--[if gte IE 9]><!-->
+    <script src="jquery.min.js"></script>
+  <!--<![endif]-->
 </head>
 <body class="general-font">
   <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -132,7 +136,6 @@
     </footer>
   </div>
 
-  <script src="jquery.min.js"></script>
   <script src="slick.min.js"></script>
   <script>
     const container = document.querySelector('.gallery-items');
