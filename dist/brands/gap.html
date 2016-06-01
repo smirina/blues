@@ -178,9 +178,9 @@
     </footer>
   </div>
   <script>
-    const toggler = document.querySelector('.navigation-toggler');
+    var toggler = document.querySelector('.navigation-toggler');
     toggler.addEventListener('click', function(e) {
-      const menu = document.querySelector('.menu')
+      var menu = document.querySelector('.menu')
       if (menu.classList.contains('push')) {
         menu.classList.remove('push');
         document.querySelector('.main-container').classList.remove('push');

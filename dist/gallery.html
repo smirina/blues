@@ -138,12 +138,12 @@
 
   <script src="slick.min.js"></script>
   <script>
-    const container = document.querySelector('.gallery-items');
+    var container = document.querySelector('.gallery-items');
 
-    const animations = {
+    var animations = {
       next: function(node, duration, start, timestamp) {
         if (!start) start = timestamp;
-        const msFromStart = timestamp - start;
+        var msFromStart = timestamp - start;
         node.style.opacity = easeOutQuart(msFromStart, 1, -1, duration);
         addTransform(
           node, "scale(" + easeOutQuart(msFromStart, 1, 0.05, duration) + ')'
@@ -156,7 +156,7 @@
       },
       prev: function(node, duration, start, timestamp) {
         if (!start) start = timestamp;
-        const msFromStart = timestamp - start;
+        var msFromStart = timestamp - start;
         node.style.opacity = easeOutQuart(msFromStart, 0, 1, duration);
         addTransform(
           node, "scale(" + easeOutQuart(msFromStart, 1.05, -0.05, duration) + ")"
@@ -180,7 +180,7 @@
     }
 
     function prev() {
-      const current = container.children[0];
+      var current = container.children[0];
       current.style.opacity = 0;
       addTransform(current, 'scale(1.05)');
       container.removeChild(current);
@@ -199,16 +199,16 @@
     }
 
     function addTransform(node, transform) {
-      const rawTransforms = node.style.transform.split(' ');
+      var rawTransforms = node.style.transform.split(' ');
       rawTransforms.push(transform);
-      const transforms = {};
+      var transforms = {};
       rawTransforms.filter(function(i) { return i !== "" }).map(function(i) {
-        const match = i.match(/^(.+)(\(.+\))$/);
+        var match = i.match(/^(.+)(\(.+\))$/);
         return [match[1], match[2]]
       }).forEach(function(elem) {
         return transforms[elem[0]] = elem[1];
       });
-      const newTransforms = Object.keys(transforms).map(function(key) {
+      var newTransforms = Object.keys(transforms).map(function(key) {
         return key + transforms[key];
       }).join(' ');
       node.style.transform = newTransforms;
@@ -227,9 +227,9 @@
     }
   </script>
   <script>
-    const toggler = document.querySelector('.navigation-toggler');
+    var toggler = document.querySelector('.navigation-toggler');
     toggler.addEventListener('click', function(e) {
-      const menu = document.querySelector('.menu')
+      var menu = document.querySelector('.menu')
       if (menu.classList.contains('push')) {
         menu.classList.remove('push');
         document.querySelector('.main-container').classList.remove('push');
