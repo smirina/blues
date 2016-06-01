@@ -461,9 +461,12 @@ body {
 .news-list {
   margin-bottom: 55px; }
   .news-list .news-item {
+    display: block;
     background-color: white;
     padding: 20px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: inherit; }
   .news-list .news-item-image {
     height: 200px;
     width: 100%;

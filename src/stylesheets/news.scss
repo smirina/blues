@@ -47,9 +47,12 @@
   margin-bottom: 55px;
 
   .news-item {
+    display: block;
     background-color: white;
     padding: 20px;
     margin-bottom: 25px;
+    text-decoration: none;
+    color: inherit;
   }
 
   .news-item-image {
@@ -57,9 +60,6 @@
     width: 100%;
     object-fit: cover;
     margin-bottom: 20px;
-  }
-
-  .news-item-title {
   }
 
   .news-item-lead {
