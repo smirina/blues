@@ -642,9 +642,11 @@ body {
     line-height: 30px; }
   .contacts-page .contacts-map {
     flex-grow: 2;
-    height: 660px; }
-    .contacts-page .contacts-map iframe {
-      width: 100%; }
+    height: 660px;
+    overflow: hidden; }
+    .contacts-page .contacts-map .ymaps-container {
+      width: 100%;
+      height: 660px; }
   .contacts-page .contacts-title {
     font-size: 44px;
     color: #7d1c20; }
@@ -660,7 +662,7 @@ body {
     .contacts-page .contacts-map {
       height: 400px;
       flex-grow: 1; }
-      .contacts-page .contacts-map iframe {
+      .contacts-page .contacts-map .ymaps-container {
         height: 400px; }
     .contacts-page .contacts-info {
       flex-grow: 1;
